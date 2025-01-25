@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import { Noto_Sans_KR } from 'next/font/google';
+import Footer from './components/commons/layout/footer/footerContainer';
+import Header from './components/commons/layout/header/headerContainer';
 import Globals from './globals';
 
 export const notoSansKR = Noto_Sans_KR({
@@ -22,7 +24,9 @@ export default function RootLayout({
     <html lang="ko">
       <body className={`${notoSansKR.variable}`}>
         <Globals />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
