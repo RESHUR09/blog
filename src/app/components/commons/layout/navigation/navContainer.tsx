@@ -6,7 +6,7 @@ export default function Navigation() {
   const NAVIGATION_ITEMS = [
     { title: 'home', page: '/' },
     { title: 'daily', page: '/daily' },
-    { title: 'post', page: '/post' },
+    { title: 'note', page: '/note' },
     { title: 'contact', page: '/contact' },
   ];
   const pathName = usePathname();
